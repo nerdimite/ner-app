@@ -174,7 +174,7 @@ export default function Home() {
           <Label>Text📜</Label>
           <Textarea
             id="context"
-            placeholder="Enter the context from where the answer will be extracted"
+            placeholder="Enter the text to extract the entities"
             onChange={(e) => {
               setText(e.target.value);
             }}
