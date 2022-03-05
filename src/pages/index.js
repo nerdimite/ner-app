@@ -17,34 +17,7 @@ export default function Home() {
   const [key, setKey] = useState("");
   const [text, setText] = useState("");
   const [output, setOutput] = useState(null);
-  // const [output, setOutput] = useState([
-  //   ["My", "O"],
-  //   ["Name", "ORG"],
-  //   ["is", "O"],
-  //   ["Bhavesh", "ORG"],
-  //   ["and", "O"],
-  //   ["I", "O"],
-  //   ["live", "O"],
-  //   ["in", "O"],
-  //   ["Ghaziabad.", "GEO"],
-  //   ["Today", "TIM"],
-  //   ["is", "O"],
-  //   ["Sunday.", "TIM"],
-  //   ["New York", "GEO"],
-  //   ["is", "O"],
-  //   ["a", "O"],
-  //   ["Place.", "ORG"],
-  //   ["I", "O"],
-  //   ["live", "O"],
-  //   ["in", "O"],
-  //   ["India.", "GEO"],
-  //   ["Come", "O"],
-  //   ["to", "O"],
-  //   ["the", "O"],
-  //   ["Kitchen.", "ORG"],
-  // ]);
 
-  // ["O", "GEO", "GPE", "PER", "ORG", "TIM", "ART", "NAT", "EVE"];
   const colorMap = {
     GEO: "bg-orange-500",
     ORG: "bg-lime-500",
@@ -206,7 +179,6 @@ export default function Home() {
               output.map((item, idx) => {
                 let token = item[0];
                 let label = item[1];
-                console.log(token, label);
 
                 if (label === "O") {
                   return (
