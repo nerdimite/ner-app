@@ -111,7 +111,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Extractive Question-Answering Model</title>
+        <title>Named Entity Recognition</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
